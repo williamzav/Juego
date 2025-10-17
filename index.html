@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Game</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <img src="../GAME1/dist/public/img/seleccion/DRAGON.png" >
+        <hr class="text-danger">
+        <div class="row justify-content-around" id="seleccion_personajes">
+            <div class="col-md-5" id="jugador1">
+                <input type="text" id="username_py1" class="form-control mb-3" placeholder="Player 1">
+                <div class="row mb-3" id="seleccion_personaje1">
+                    <div class="col-3">
+                        <button class="btn btn-danger rounded-circle">
+                            <img src="./public/img/seleccion/01.png" alt="personaje1" class="img-fluid mt-1 mb-1"
+                                title="Veguito">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger rounded-circle">
+                            <img src="./public/img/seleccion/03.png" alt="personaje2" class="img-fluid mt-1 mb-1"
+                                title="Trunks">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger rounded-circle">
+                            <img src="./public/img/seleccion/05.png" alt="personaje3" class="img-fluid mt-1 mb-1"
+                                title="Goku">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger rounded-circle">
+                            <img src="./public/img/seleccion/06.png" alt="personaje4" class="img-fluid mt-1 mb-1"
+                                title="Gohan">
+                        </button>
+                    </div>
+                </div>
+                <button id="btn_py1" class="btn btn-danger w-100 mb-3">Aceptar</button>
+            </div>
+            <div class="col-md-5" id="jugador2">
+                <input type="text" id="username_py2" class="form-control mb-3" placeholder="Player 2">
+                <div class="row mb-3" id="seleccion_personaje2">
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-circle">
+                            <img src="./public/img/seleccion/02.png" alt="personaje1" class="img-fluid mt-1 mb-1"
+                                title="Veguetta">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-circle">
+                            <img src="./public/img/seleccion/04.png" alt="personaje2" class="img-fluid mt-1 mb-1"
+                                title="Pikoro">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-circle">
+                            <img src="./public/img/seleccion/07.png" alt="personaje3" class="img-fluid mt-1 mb-1"
+                                title="Gogueta">
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-circle">
+                            <img src="./public/img/seleccion/08.png" alt="personaje4" class="img-fluid mt-1 mb-1"
+                                title="Cell">
+                        </button>
+                    </div>
+                </div>
+                <button id="btn_py2" class="btn btn-primary w-100 mb-3">Aceptar</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-around d-none" id="batalla">
+            <div class="col-md-5">
+                <h2 id="nombre_personaje1"></h2>
+                <p id="username1"></p>
+                <hr class="text-danger">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Vida">
+                            <div id="vida1" class="progress-bar bg-success" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Energía">
+                            <div id="energia1" class="progress-bar bg-primary" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Ki">
+                            <div id="ki1" class="progress-bar bg-info" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="mx-auto d-block" width="40%" id="img_personaje1" src="" alt="">
+                <button id="btn_atk_basico1" class="btn btn-primary mb-3">ATK Básico</button>
+                <button id="btn_atk_especial1" class="btn btn-warning mb-3">ATK Especial</button>
+                <button id="btn_ki1" class="btn btn-warning mb-3">Ki</button>
+                <button id="btn_vida1" class="btn btn-warning mb-3">Vida</button>
+            </div>
+
+            <div class="col-md-2 align-self-center">
+                <h2 class="text-center display-3">VS</h2>
+            </div>
+
+            <div class="col-md-5">
+                <h2 id="nombre_personaje2"></h2>
+                <p id="username2"></p>
+                <hr class="text-danger">
+                <div class="row">
+
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Vida">
+                            <div id="vida2" class="progress-bar bg-success" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Energía">
+                            <div id="energia2" class="progress-bar bg-primary" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="progress" aria-label="Ki">
+                            <div id="ki2" class="progress-bar bg-info" role="progressbar" style="width: 100%">1000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="mx-auto d-block" width="40%" id="img_personaje2" src="" alt="">
+                <button id="btn_atk_basico2" class="btn btn-primary mb-3">ATK Básico</button>
+                <button id="btn_atk_especial2" class="btn btn-warning mb-3">ATK Especial</button>
+                <button id="btn_ki2" class="btn btn-warning mb-3">Ki</button>
+                <button id="btn_vida2" class="btn btn-warning mb-3">Vida</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
