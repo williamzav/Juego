@@ -1,0 +1,65 @@
+body{
+    background-image: url('../img/fondo/6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 233, 64);
+    font-size: 80px;
+    
+}
+
+#username_py1{
+    background-color: rgba(255, 0, 13, 0.466);
+}
+
+#username_py2{
+    background-color: rgba(123, 0, 255, 0.466);
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: #6f42c1; 
+    border-color: #6f42c1;
+}
+
+.btn-purple:hover {
+    color: #fff;
+    background-color: #59369a; 
+    border-color: #53338f;
+}
+
+#nombre_personaje1 {
+  color: #ff4040; 
+  font-family: 'Saiyan Sans', 'Impact', 'Arial Black', sans-serif;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px #000, 0 0 15px #ff8c00;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nombre_personaje2 {
+  color: #009dff; /* Azul Ki */
+  font-family: 'Saiyan Sans', 'Impact', 'Arial Black', sans-serif;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px #000, 0 0 15px #00ffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#username1, #username2 {
+  color: #ffe600; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  font-style: italic;
+}
